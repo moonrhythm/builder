@@ -21,4 +21,5 @@ RUN asdf plugin add golang && \
 	asdf plugin add hugo https://github.com/nklmilojevic/asdf-hugo.git && \
 	asdf plugin add bun && \
 	asdf plugin add rust && \
-	asdf plugin add zig
+	asdf plugin add zig && \
+	asdf plugin add pnpm
