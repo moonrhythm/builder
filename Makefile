@@ -1,4 +1,4 @@
-REGISTRY=registry-push.moonrhythm.io
+REGISTRY=registry-public.deploys.app
 
 build:
 	buildctl build \

@@ -1,4 +1,4 @@
-FROM debian:bookworm-20231120-slim
+FROM debian:bookworm-20240211-slim
 
 SHELL ["/bin/bash", "-c"]
 
@@ -12,7 +12,7 @@ RUN apt-get update && \
 		unzip \
 		&& \
 	apt-get clean
-RUN git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.13.1 --depth=1
+RUN git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.14.0 --depth=1
 
 ENV PATH="$PATH:/root/.asdf/bin:/root/.asdf/shims"
 
