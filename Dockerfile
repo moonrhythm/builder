@@ -1,4 +1,4 @@
-FROM debian:bookworm-20240211-slim
+FROM debian:bookworm-20240513-slim
 
 SHELL ["/bin/bash", "-c"]
 
