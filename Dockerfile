@@ -1,3 +1,7 @@
+FROM golang:1.23.6-bookworm
+
+RUN go install -ldflags "-X main.version=v0.16.1" github.com/asdf-vm/asdf/cmd/asdf@v0.16.1
+
 FROM debian:12.9-slim
 
 SHELL ["/bin/bash", "-c"]
@@ -12,7 +16,8 @@ RUN apt-get update && \
 		unzip \
 		&& \
 	apt-get clean
-RUN git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.14.0 --depth=1
+
+COPY --from=0 /go/bin/asdf /root/.asdf/bin/asdf
 
 ENV PATH="$PATH:/root/.asdf/bin:/root/.asdf/shims"
 
