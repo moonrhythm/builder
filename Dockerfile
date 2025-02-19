@@ -27,4 +27,5 @@ RUN asdf plugin add golang && \
 	asdf plugin add bun && \
 	asdf plugin add rust && \
 	asdf plugin add zig && \
-	asdf plugin add pnpm
+	asdf plugin add pnpm && \
+	asdf plugin add python
