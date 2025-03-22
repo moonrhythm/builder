@@ -1,6 +1,6 @@
 FROM golang:1.23.6-bookworm
 
-RUN go install -ldflags "-X main.version=v0.16.3" github.com/asdf-vm/asdf/cmd/asdf@v0.16.3
+RUN go install -ldflags "-X main.version=v0.16.6" github.com/asdf-vm/asdf/cmd/asdf@v0.16.6
 
 FROM debian:12.9-slim
 
