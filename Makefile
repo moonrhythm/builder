@@ -1,4 +1,4 @@
-REGISTRY=asia-southeast3-docker.pkg.dev/moonrhythm-core/public
+REGISTRY=registry.deploys.app/public
 
 build:
 	buildctl build \
