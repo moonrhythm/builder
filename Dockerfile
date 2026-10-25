@@ -1,8 +1,8 @@
-FROM golang:1.26.3-bookworm
+FROM golang:1.27.3-bookworm
 
-RUN go install github.com/asdf-vm/asdf/cmd/asdf@v0.19.0
+RUN go install github.com/asdf-vm/asdf/cmd/asdf@v0.20.2
 
-FROM debian:12.9-slim
+FROM debian:12.15-slim
 
 SHELL ["/bin/bash", "-c"]
 
